@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🃏 Blackjack</h1>
+
+    <div id="game">
+        <p><strong>Le tue chips:</strong> <span id="chips">100</span></p>
+
+        <div class="hand">
+            <h2>Le tue carte</h2>
+            <div id="player-cards"></div>
+            <p>Punteggio: <span id="player-score">0</span></p>
+        </div>
+
+        <div class="hand">
+            <h2>Carte del banco</h2>
+            <div id="dealer-cards"></div>
+            <p>Punteggio: <span id="dealer-score">0</span></p>
+        </div>
+
+        <button onclick="startGame()">Nuova mano</button>
+        <button onclick="hit()">Carta</button>
+        <button onclick="stand()">Stai</button>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
